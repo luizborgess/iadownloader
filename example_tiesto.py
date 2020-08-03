@@ -1,3 +1,6 @@
+## Example
+#Tiesto's club life downloader
+
 from internetarchive import get_files,get_item
 fnames = [f.name for f in get_files('TiestosClubLife', glob_pattern='*ogg')]
 

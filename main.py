@@ -1,6 +1,5 @@
 from internetarchive import get_files,get_item
 
-
 print('Bem vindo ao IA downloader!!')
 
 repositorio= input('Qual o nome do repositorio que deseja baixar?')
@@ -21,7 +20,8 @@ print('Arquivo selecionado: '+arquivo+'\n')
 bole=input('Deseja baixar o arquivo?\n 0-Não\n 1-Sim\n')
 if bool(bole):
     print('Baixando arquivo: '+arquivo)
-    item=get_item('TiestosClubLife')
+    item=get_item(repositorio)
     item.download(arquivo)
+    print('Download concluido!')
 else:
     print('exit')
